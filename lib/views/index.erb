@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title> The Gossip Project </title>
+	</head>
+	<body>
+    <h1>Bienvenu sur le site des potins THP ! !</h1>
+    <% if gossips.length == 0 %>
+      <p>oups...aucun potin n'exite pour le moment <a href="/gossips/new/">clic ici</a> pour en créer un !</p>
+    <% else %>
+      <% gossips.each_with_index do |gossip, index| %>
+          <p>
+            Author : <%= gossip.author %><br/>
+            <a href="/gossips/<%= index + 1 %>">Content :  <%= gossip.content %></a>
+          </p>
+      <% end %>
+      <p> <a href="/gossips/new/">clic ici</a> pour en créer un nouveau !</p>
+    <% end %>
+	</body>
+</html>

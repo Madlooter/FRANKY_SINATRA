@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Visualisation du potin</title>
+  </head>
+  <body>
+    <% if id_gossip.length == 0 %>
+      <p>Ce potin n'existe pas <a href="/">clic ici</a> pour retourner à l'accueil !</p>
+    <% else %>
+      <h1>Contenu du potin n° <%= params['id'] %> </h1>
+      <p>
+        Son auteur : <%= id_gossip[0].author %><br/>
+        Le contenu du potin : <%= id_gossip[0].content %>
+      </p>
+      <a href="/gossips/<%=params['id']%>/edit"> Editer </a>
+      <p><a href="/">clic ici</a> pour retourner à l'acceuil !</p>
+    <% end %>
+  </body>
+</html>
