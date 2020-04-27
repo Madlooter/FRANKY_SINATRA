@@ -1,4 +1,4 @@
-# FRANKY_SINATRA
+# FRANKY_SINATRA - Entrainement à Sinatra via la création d'une plateforme de potins The Gossip Project
 
 1. Télécharger les dossiers, se mettre à la racine du dossier the_gossip_project_2 et effectuer un 'bundle install' dans le terminal
 2. Lancer le serveur avec un 'Shotgun -p 4567'
